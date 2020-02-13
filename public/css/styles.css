@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body, button, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #f2f2f2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+header ul li a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #888;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+
+header ul li a:hover {
+    background-color: rgba(224, 220, 220, 0.733);
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    padding-top: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+form {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+form h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input {
+    padding: 6px 25px 6px 4px;
+}
+
+form button {
+    padding: 7px 4px;
+    background: #888;
+    color: #fff;
+    border: 1px solid #888;
+    cursor: pointer;
+}
+
+/* Weather Style */
+
+.weather {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0003;
+    color: #888;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "left-info right-info";
+}
+
+.top-info {
+    grid-area: header;
+}
+
+.left-info {
+    display: flex;
+    margin: 20px 0;
+    color: #000;
+    font-size: 1.5rem;
+    grid-area: left-info;
+}
+
+.right-info {
+    grid-area: right-info;
+    margin: 25px 0 0 20px;
+}
+
+.left-info img {
+    width: 63.99px;
+}
+
+.my-info {
+    text-align: center;
+    margin: 30px 0;
+}
+
+small {
+    color: #555;
+}
+
+.my-info h3 {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.my-info a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.my-info ul {
+    list-style: none;
+    border: 1px solid #ccc;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+    box-shadow: 0 0 10px #0005;
+}
+
+.my-info ul li {
+    margin: 8px 0;
+}
+
+
+.my-info a:hover {
+    opacity: 0.8;
+}
+
