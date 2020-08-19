@@ -37,7 +37,7 @@ const draw = (weather) => {
             <h3>${weather.data.weatherStatus}</h3>
         </div>
         <div class="left-info">
-            <img src="/images/${weather.data.icon}.png" alt="weather icon" />
+            <img src="/images/${weather.data.icon}.png" alt="${weather.data.icon}" />
             <h1>${weather.data.temperature}°C</h1>
         </div>
         <div class="right-info">
@@ -70,3 +70,4 @@ const getLocation = _ => {
 }
 
 getLocation()
+console.log(weather.data.icon)
